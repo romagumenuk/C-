@@ -1,0 +1,20 @@
+using System;
+
+namespace classwork
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int num = int.Parse(Console.ReadLine());
+            if (num < 99 && num > 9)
+            {
+                if (num % 2 == 0)
+                {
+                    Console.WriteLine($"Красава брат!{num}");
+                }
+            }
+            Console.ReadKey();
+        }
+    }
+}

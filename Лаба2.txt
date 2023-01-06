@@ -1,0 +1,30 @@
+using System;
+
+namespace classwork
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int nn, nk, k;
+            Console.WriteLine("От скольки?");
+            nn = int.Parse(Console.ReadLine());
+            Console.WriteLine("До скольки?");
+            nk = int.Parse(Console.ReadLine());
+            if (nn <= nk && nk >= 0 && nn >= 0)
+            {
+            }
+            else
+            {
+                Console.WriteLine("Неправильные значения!!!");
+            }
+            double res = 0;
+            for (k = nn; k <= nk; k++)
+            {
+                res += (Math.Pow(k, 2) - 1) / (Math.Pow(-1, k + 1) * Math.Pow(k, 2) + 7);
+            }
+            Console.WriteLine($"Ответ: {res}");
+            Console.ReadKey();
+        }
+    }
+}
